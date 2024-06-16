@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <group>
+    <clip-path
+        android:pathData="M256,256m-256,0a256,256 0,1 1,512 0a256,256 0,1 1,-512 0"/>
+    <path
+        android:pathData="M0,0h512v512H0z"
+        android:fillColor="#d80027"/>
+    <path
+        android:pathData="M256,64m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M64,256m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M448,256m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M256,448m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M352,400m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M400,352m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M352,112m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M400,160m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M160,112m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M112,160m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M112,352m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="M160,400m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillColor="#ffda44"/>
+    <path
+        android:pathData="m256,60 l-103,52 20,61 -61,-20 -52,103 52,103 61,-20 -20,61 103,52 103,-52 -20,-61 61,20 52,-103 -52,-103 -61,20 20,-61zM256,96 L320,128 288,224 384,192 416,256 384,320 288,288 320,384 256,416 192,384 224,288 128,320 96,256 128,192 224,224 192,128z"
+        android:fillColor="#ffda44"/>
+  </group>
+</vector>
