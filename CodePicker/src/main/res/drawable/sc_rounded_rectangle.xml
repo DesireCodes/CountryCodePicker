@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="800dp"
+    android:height="800dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+  <group>
+    <clip-path
+        android:pathData="M2,4L26,4A2,2 0,0 1,28 6L28,22A2,2 0,0 1,26 24L2,24A2,2 0,0 1,0 22L0,6A2,2 0,0 1,2 4z"/>
+    <path
+        android:pathData="M2,4.25L26,4.25A1.75,1.75 0,0 1,27.75 6L27.75,22A1.75,1.75 0,0 1,26 23.75L2,23.75A1.75,1.75 0,0 1,0.25 22L0.25,6A1.75,1.75 0,0 1,2 4.25z"
+        android:strokeWidth="0.5"
+        android:fillColor="#ffffff"
+        android:strokeColor="#F5F5F5"/>
+    <group>
+      <clip-path
+          android:pathData="M2,4.25L26,4.25A1.75,1.75 0,0 1,27.75 6L27.75,22A1.75,1.75 0,0 1,26 23.75L2,23.75A1.75,1.75 0,0 1,0.25 22L0.25,6A1.75,1.75 0,0 1,2 4.25z"/>
+      <path
+          android:pathData="M28,4L0,4L0,24L28,24L28,17.333L0,24L28,10.667L28,4Z"
+          android:fillType="evenOdd">
+        <aapt:attr name="android:fillColor">
+          <gradient 
+              android:startX="0"
+              android:startY="4"
+              android:endX="0"
+              android:endY="24"
+              android:type="linear">
+            <item android:offset="0" android:color="#FF1DBE4F"/>
+            <item android:offset="1" android:color="#FF159B3F"/>
+          </gradient>
+        </aapt:attr>
+      </path>
+      <path
+          android:pathData="M0,4L9.333,4L0,24L0,4Z"
+          android:fillColor="#0858B4"
+          android:fillType="evenOdd"/>
+      <path
+          android:pathData="M18.667,4L28,4L28,10.667L0,24L18.667,4Z"
+          android:fillColor="#ED3535"
+          android:fillType="evenOdd"/>
+      <path
+          android:pathData="M28,24L28,17.333L0,24L28,24Z"
+          android:fillColor="#08964F"
+          android:fillType="evenOdd"/>
+      <path
+          android:pathData="M9.333,4L18.667,4L0,24L9.333,4Z"
+          android:fillColor="#FFDD67"
+          android:fillType="evenOdd"/>
+    </group>
+  </group>
+</vector>

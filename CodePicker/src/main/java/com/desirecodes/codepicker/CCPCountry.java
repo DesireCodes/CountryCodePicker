@@ -1382,6 +1382,498 @@ public class CCPCountry implements Comparable<CCPCountry> {
     }
 
 
+    static int getRoundedRectangleFlagMasterResID(CCPCountry CCPCountry) {
+        switch (CCPCountry.getNameCode().toLowerCase()) {
+            //this should be sorted based on country name code.
+            case "ad": //andorra
+                return R.drawable.ad_rounded_rectangle;
+            case "ae": //united arab emirates
+                return R.drawable.ae_rounded_rectangle;
+            case "af": //afghanistan
+                return R.drawable.af_rounded_rectangle;
+            case "ag": //antigua & barbuda
+                return R.drawable.ag_rounded_rectangle;
+            case "ai": //anguilla // Caribbean Islands
+                return R.drawable.ai_rounded_rectangle;
+            case "al": //albania
+                return R.drawable.al_rounded_rectangle;
+            case "am": //armenia
+                return R.drawable.am_rounded_rectangle;
+            case "ao": //angola
+                return R.drawable.ao_rounded_rectangle;
+            case "aq": //antarctica // custom
+                return R.drawable.aq_rounded_rectangle;
+            case "ar": //argentina
+                return R.drawable.ar_rounded_rectangle;
+            case "as": //American Samoa
+                return R.drawable.as_rounded_rectangle;
+            case "at": //austria
+                return R.drawable.at_rounded_rectangle;
+            case "au": //australia
+                return R.drawable.au_rounded_rectangle;
+            case "aw": //aruba
+                return R.drawable.aw_rounded_rectangle;
+            case "ax": //alan islands
+                return R.drawable.ax_rounded_rectangle;
+            case "az": //azerbaijan
+                return R.drawable.az_rounded_rectangle;
+            case "ba": //bosnia and herzegovina
+                return R.drawable.ba_rounded_rectangle;
+            case "bb": //barbados
+                return R.drawable.bb_rounded_rectangle;
+            case "bd": //bangladesh
+                return R.drawable.bd_rounded_rectangle;
+            case "be": //belgium
+                return R.drawable.be_rounded_rectangle;
+            case "bf": //burkina faso
+                return R.drawable.bf_rounded_rectangle;
+            case "bg": //bulgaria
+                return R.drawable.bg_rounded_rectangle;
+            case "bh": //bahrain
+                return R.drawable.bh_rounded_rectangle;
+            case "bi": //burundi
+                return R.drawable.bi_rounded_rectangle;
+            case "bj": //benin
+                return R.drawable.bj_rounded_rectangle;
+            case "bl": //saint barthélemy
+                return R.drawable.bl_rounded_rectangle;// custom
+            case "bm": //bermuda
+                return R.drawable.bm_rounded_rectangle;
+            case "bn": //brunei darussalam // custom
+                return R.drawable.bn_rounded_rectangle;
+            case "bo": //bolivia, plurinational state of
+                return R.drawable.bo_rounded_rectangle;
+            case "br": //brazil
+                return R.drawable.br_rounded_rectangle;
+            case "bs": //bahamas
+                return R.drawable.bs_rounded_rectangle;
+            case "bt": //bhutan
+                return R.drawable.bt_rounded_rectangle;
+            case "bw": //botswana
+                return R.drawable.bw_rounded_rectangle;
+            case "by": //belarus
+                return R.drawable.by_rounded_rectangle;
+            case "bz": //belize
+                return R.drawable.bz_rounded_rectangle;
+            case "ca": //canada
+                return R.drawable.ca_rounded_rectangle;
+            case "cc": //cocos (keeling) islands
+                return R.drawable.cc_rounded_rectangle;// custom
+            case "cd": //congo, the democratic republic of the
+                return R.drawable.cd_rounded_rectangle;
+            case "cf": //central african republic
+                return R.drawable.cf_rounded_rectangle;
+            case "cg": //congo
+                return R.drawable.cg_rounded_rectangle;
+            case "ch": //switzerland
+                return R.drawable.ch_rounded_rectangle;
+            case "ci": //côte d\'ivoire
+                return R.drawable.ci_rounded_rectangle;
+            case "ck": //cook islands
+                return R.drawable.ck_rounded_rectangle;
+            case "cl": //chile
+                return R.drawable.cl_rounded_rectangle;
+            case "cm": //cameroon
+                return R.drawable.cm_rounded_rectangle;
+            case "cn": //china
+                return R.drawable.cn_rounded_rectangle;
+            case "co": //colombia
+                return R.drawable.co_rounded_rectangle;
+            case "cr": //costa rica
+                return R.drawable.cr_rounded_rectangle;
+            case "cu": //cuba
+                return R.drawable.cu_rounded_rectangle;
+            case "cv": //cape verde
+                return R.drawable.cv_rounded_rectangle;
+            case "cw": //curaçao
+                return R.drawable.cw_rounded_rectangle;
+            case "cx": //christmas island
+                return R.drawable.cx_rounded_rectangle;
+            case "cy": //cyprus
+                return R.drawable.cy_rounded_rectangle;
+            case "cz": //czech republic
+                return R.drawable.cz_rounded_rectangle;
+            case "de": //germany
+                return R.drawable.de_rounded_rectangle;
+            case "dj": //djibouti
+                return R.drawable.dj_rounded_rectangle;
+            case "dk": //denmark
+                return R.drawable.dk_rounded_rectangle;
+            case "dm": //dominica
+                return R.drawable.dm_rounded_rectangle;
+            case "do": //dominican republic
+                return R.drawable.do_rounded_rectangle;
+            case "dz": //algeria
+                return R.drawable.dz_rounded_rectangle;
+            case "ec": //ecuador
+                return R.drawable.ec_rounded_rectangle;
+            case "ee": //estonia
+                return R.drawable.ee_rounded_rectangle;
+            case "eg": //egypt
+                return R.drawable.eg_rounded_rectangle;
+            case "er": //eritrea
+                return R.drawable.er_rounded_rectangle;
+            case "es": //spain
+                return R.drawable.es_rounded_rectangle;
+            case "et": //ethiopia
+                return R.drawable.et_rounded_rectangle;
+            case "fi": //finland
+                return R.drawable.fi_rounded_rectangle;
+            case "fj": //fiji
+                return R.drawable.fj_rounded_rectangle;
+            case "fk": //falkland islands (malvinas)
+                return R.drawable.fk_rounded_rectangle;
+            case "fm": //micronesia, federated states of
+                return R.drawable.fm_rounded_rectangle;
+            case "fo": //faroe islands
+                return R.drawable.fo_rounded_rectangle;
+            case "fr": //france
+                return R.drawable.fr_rounded_rectangle;
+            case "ga": //gabon
+                return R.drawable.ga_rounded_rectangle;
+            case "gb": //united kingdom
+                return R.drawable.gb_rounded_rectangle;
+            case "gd": //grenada
+                return R.drawable.gd_rounded_rectangle;
+            case "ge": //georgia
+                return R.drawable.ge_rounded_rectangle;
+            case "gf": //guyane
+                return R.drawable.gf_rounded_rectangle;
+            case "gg": //Guernsey
+                return R.drawable.gg_rounded_rectangle;
+            case "gh": //ghana
+                return R.drawable.gh_rounded_rectangle;
+            case "gi": //gibraltar
+                return R.drawable.gi_rounded_rectangle;
+            case "gl": //greenland
+                return R.drawable.gl_rounded_rectangle;
+            case "gm": //gambia
+                return R.drawable.gm_rounded_rectangle;
+            case "gn": //guinea
+                return R.drawable.gn_rounded_rectangle;
+            case "gp": //guadeloupe
+                return R.drawable.gp_rounded_rectangle;
+            case "gq": //equatorial guinea
+                return R.drawable.gq_rounded_rectangle;
+            case "gr": //greece
+                return R.drawable.gr_rounded_rectangle;
+            case "gt": //guatemala
+                return R.drawable.gt_rounded_rectangle;
+            case "gu": //Guam
+                return R.drawable.gu_rounded_rectangle;
+            case "gw": //guinea-bissau
+                return R.drawable.gw_rounded_rectangle;
+            case "gy": //guyana
+                return R.drawable.gy_rounded_rectangle;
+            case "hk": //hong kong
+                return R.drawable.hk_rounded_rectangle;
+            case "hn": //honduras
+                return R.drawable.hn_rounded_rectangle;
+            case "hr": //croatia
+                return R.drawable.hr_rounded_rectangle;
+            case "ht": //haiti
+                return R.drawable.ht_rounded_rectangle;
+            case "hu": //hungary
+                return R.drawable.hu_rounded_rectangle;
+            case "id": //indonesia
+                return R.drawable.id_rounded_rectangle;
+            case "ie": //ireland
+                return R.drawable.ie_rounded_rectangle;
+            case "il": //israel
+                return R.drawable.il_rounded_rectangle;
+            case "im": //isle of man
+                return R.drawable.im_rounded_rectangle; // custom
+            case "is": //Iceland
+                return R.drawable.is_rounded_rectangle;
+            case "in": //india
+                return R.drawable.in_rounded_rectangle;
+            case "io": //British indian ocean territory
+                return R.drawable.io_rounded_rectangle;
+            case "iq": //iraq
+                return R.drawable.iq_rounded_rectangle;
+            case "ir": //iran, islamic republic of
+                return R.drawable.ir_rounded_rectangle;
+            case "it": //italy
+                return R.drawable.it_rounded_rectangle;
+            case "je": //Jersey
+                return R.drawable.je_rounded_rectangle;
+            case "jm": //jamaica
+                return R.drawable.jm_rounded_rectangle;
+            case "jo": //jordan
+                return R.drawable.jo_rounded_rectangle;
+            case "jp": //japan
+                return R.drawable.jp_rounded_rectangle;
+            case "ke": //kenya
+                return R.drawable.ke_rounded_rectangle;
+            case "kg": //kyrgyzstan
+                return R.drawable.kg_rounded_rectangle;
+            case "kh": //cambodia
+                return R.drawable.kh_rounded_rectangle;
+            case "ki": //kiribati
+                return R.drawable.ki_rounded_rectangle;
+            case "km": //comoros
+                return R.drawable.km_rounded_rectangle;
+            case "kn": //st kitts & nevis
+                return R.drawable.kn_rounded_rectangle;
+            case "kp": //north korea
+                return R.drawable.kp_rounded_rectangle;
+            case "kr": //south korea
+                return R.drawable.kr_rounded_rectangle;
+            case "kw": //kuwait
+                return R.drawable.kw_rounded_rectangle;
+            case "ky": //Cayman_Islands
+                return R.drawable.ky_rounded_rectangle;
+            case "kz": //kazakhstan
+                return R.drawable.kz_rounded_rectangle;
+            case "la": //lao people\'s democratic republic
+                return R.drawable.la_rounded_rectangle;
+            case "lb": //lebanon
+                return R.drawable.lb_rounded_rectangle;
+            case "lc": //st lucia
+                return R.drawable.lc_rounded_rectangle;
+            case "li": //liechtenstein
+                return R.drawable.li_rounded_rectangle;
+            case "lk": //sri lanka
+                return R.drawable.lk_rounded_rectangle;
+            case "lr": //liberia
+                return R.drawable.lr_rounded_rectangle;
+            case "ls": //lesotho
+                return R.drawable.ls_rounded_rectangle;
+            case "lt": //lithuania
+                return R.drawable.lt_rounded_rectangle;
+            case "lu": //luxembourg
+                return R.drawable.lu_rounded_rectangle;
+            case "lv": //latvia
+                return R.drawable.lv_rounded_rectangle;
+            case "ly": //libya
+                return R.drawable.ly_rounded_rectangle;
+            case "ma": //morocco
+                return R.drawable.ma_rounded_rectangle;
+            case "mc": //monaco
+                return R.drawable.mc_rounded_rectangle;
+            case "md": //moldova, republic of
+                return R.drawable.md_rounded_rectangle;
+            case "me": //montenegro
+                return R.drawable.me_rounded_rectangle;// custom
+            case "mf":
+                return R.drawable.mf_rounded_rectangle;
+            case "mg": //madagascar
+                return R.drawable.mg_rounded_rectangle;
+            case "mh": //marshall islands
+                return R.drawable.mh_rounded_rectangle;
+            case "mk": //macedonia, the former yugoslav republic of
+                return R.drawable.mk_rounded_rectangle;
+            case "ml": //mali
+                return R.drawable.ml_rounded_rectangle;
+            case "mm": //myanmar
+                return R.drawable.mm_rounded_rectangle;
+            case "mn": //mongolia
+                return R.drawable.mn_rounded_rectangle;
+            case "mo": //macao
+                return R.drawable.mo_rounded_rectangle;
+            case "mp": // Northern mariana islands
+                return R.drawable.mp_rounded_rectangle;
+            case "mq": //martinique
+                return R.drawable.mq_rounded_rectangle;
+            case "mr": //mauritania
+                return R.drawable.mr_rounded_rectangle;
+            case "ms": //montserrat
+                return R.drawable.mq_rounded_rectangle;
+            case "mt": //malta
+                return R.drawable.mt_rounded_rectangle;
+            case "mu": //mauritius
+                return R.drawable.mu_rounded_rectangle;
+            case "mv": //maldives
+                return R.drawable.mv_rounded_rectangle;
+            case "mw": //malawi
+                return R.drawable.mw_rounded_rectangle;
+            case "mx": //mexico
+                return R.drawable.mx_rounded_rectangle;
+            case "my": //malaysia
+                return R.drawable.my_rounded_rectangle;
+            case "mz": //mozambique
+                return R.drawable.mz_rounded_rectangle;
+            case "na": //namibia
+                return R.drawable.na_rounded_rectangle;
+            case "nc": //new caledonia
+                return R.drawable.nc_rounded_rectangle;// custom
+            case "ne": //niger
+                return R.drawable.ne_rounded_rectangle;
+            case "nf": //Norfolk
+                return R.drawable.nf_rounded_rectangle;
+            case "ng": //nigeria
+                return R.drawable.ng_rounded_rectangle;
+            case "ni": //nicaragua
+                return R.drawable.ni_rounded_rectangle;
+            case "nl": //netherlands
+                return R.drawable.nl_rounded_rectangle;
+            case "no": //norway
+                return R.drawable.no_rounded_rectangle;
+            case "np": //nepal
+                return R.drawable.np_rounded_rectangle;
+            case "nr": //nauru
+                return R.drawable.nr_rounded_rectangle;
+            case "nu": //niue
+                return R.drawable.nu_rounded_rectangle;
+            case "nz": //new zealand
+                return R.drawable.nz_rounded_rectangle;
+            case "om": //oman
+                return R.drawable.om_rounded_rectangle;
+            case "pa": //panama
+                return R.drawable.pa_rounded_rectangle;
+            case "pe": //peru
+                return R.drawable.pe_rounded_rectangle;
+            case "pf": //french polynesia
+                return R.drawable.pf_rounded_rectangle;
+            case "pg": //papua new guinea
+                return R.drawable.pg_rounded_rectangle;
+            case "ph": //philippines
+                return R.drawable.ph_rounded_rectangle;
+            case "pk": //pakistan
+                return R.drawable.pk_rounded_rectangle;
+            case "pl": //poland
+                return R.drawable.pl_rounded_rectangle;
+            case "pm": //saint pierre and miquelon
+                return R.drawable.pm_rounded_rectangle;
+            case "pn": //pitcairn
+                return R.drawable.pn_rounded_rectangle;
+            case "pr": //puerto rico
+                return R.drawable.pr_rounded_rectangle;
+            case "ps": //palestine
+                return R.drawable.ps_rounded_rectangle;
+            case "pt": //portugal
+                return R.drawable.pt_rounded_rectangle;
+            case "pw": //palau
+                return R.drawable.pw_rounded_rectangle;
+            case "py": //paraguay
+                return R.drawable.py_rounded_rectangle;
+            case "qa": //qatar
+                return R.drawable.qa_rounded_rectangle;
+            case "re": //la reunion
+                return R.drawable.re_rounded_rectangle; // no exact flag found
+            case "ro": //romania
+                return R.drawable.ro_rounded_rectangle;
+            case "rs": //serbia
+                return R.drawable.rs_rounded_rectangle; // custom
+            case "ru": //russian federation
+                return R.drawable.ru_rounded_rectangle;
+            case "rw": //rwanda
+                return R.drawable.rw_rounded_rectangle;
+            case "sa": //saudi arabia
+                return R.drawable.sa_rounded_rectangle;
+            case "sb": //solomon islands
+                return R.drawable.sb_rounded_rectangle;
+            case "sc": //seychelles
+                return R.drawable.sc_rounded_rectangle;
+            case "sd": //sudan
+                return R.drawable.sd_rounded_rectangle;
+            case "se": //sweden
+                return R.drawable.se_rounded_rectangle;
+            case "sg": //singapore
+                return R.drawable.sg_rounded_rectangle;
+            case "sh": //saint helena, ascension and tristan da cunha
+                return R.drawable.sh_rounded_rectangle; // custom
+            case "si": //slovenia
+                return R.drawable.si_rounded_rectangle;
+            case "sk": //slovakia
+                return R.drawable.sk_rounded_rectangle;
+            case "sl": //sierra leone
+                return R.drawable.sl_rounded_rectangle;
+            case "sm": //san marino
+                return R.drawable.sm_rounded_rectangle;
+            case "sn": //senegal
+                return R.drawable.sn_rounded_rectangle;
+            case "so": //somalia
+                return R.drawable.so_rounded_rectangle;
+            case "sr": //suriname
+                return R.drawable.sr_rounded_rectangle;
+            case "ss": //south sudan
+                return R.drawable.ss_rounded_rectangle;
+            case "st": //sao tome and principe
+                return R.drawable.st_rounded_rectangle;
+            case "sv": //el salvador
+                return R.drawable.sv_rounded_rectangle;
+            case "sx": //sint maarten
+                return R.drawable.sx_rounded_rectangle;
+            case "sy": //syrian arab republic
+                return R.drawable.sy_rounded_rectangle;
+            case "sz": //swaziland
+                return R.drawable.sz_rounded_rectangle;
+            case "tc": //turks & caicos islands
+                return R.drawable.tc_rounded_rectangle;
+            case "td": //chad
+                return R.drawable.td_rounded_rectangle;
+            case "tg": //togo
+                return R.drawable.tg_rounded_rectangle;
+            case "th": //thailand
+                return R.drawable.th_rounded_rectangle;
+            case "tj": //tajikistan
+                return R.drawable.tj_rounded_rectangle;
+            case "tk": //tokelau
+                return R.drawable.tk_rounded_rectangle; // custom
+            case "tl": //timor-leste
+                return R.drawable.tl_rounded_rectangle;
+            case "tm": //turkmenistan
+                return R.drawable.tm_rounded_rectangle;
+            case "tn": //tunisia
+                return R.drawable.tn_rounded_rectangle;
+            case "to": //tonga
+                return R.drawable.to_rounded_rectangle;
+            case "tr": //turkey
+                return R.drawable.tr_rounded_rectangle;
+            case "tt": //trinidad & tobago
+                return R.drawable.tt_rounded_rectangle;
+            case "tv": //tuvalu
+                return R.drawable.tv_rounded_rectangle;
+            case "tw": //taiwan, province of china
+                return R.drawable.tw_rounded_rectangle;
+            case "tz": //tanzania, united republic of
+                return R.drawable.tz_rounded_rectangle;
+            case "ua": //ukraine
+                return R.drawable.ua_rounded_rectangle;
+            case "ug": //uganda
+                return R.drawable.ug_rounded_rectangle;
+            case "us": //united states
+                return R.drawable.us_rounded_rectangle;
+            case "uy": //uruguay
+                return R.drawable.uy_rounded_rectangle;
+            case "uz": //uzbekistan
+                return R.drawable.uz_rounded_rectangle;
+            case "va": //holy see (vatican city state)
+                return R.drawable.va_rounded_rectangle;
+            case "vc": //st vincent & the grenadines
+                return R.drawable.vc_rounded_rectangle;
+            case "ve": //venezuela, bolivarian republic of
+                return R.drawable.ve_rounded_rectangle;
+            case "vg": //british virgin islands
+                return R.drawable.vg_rounded_rectangle;
+            case "vi": //us virgin islands
+                return R.drawable.vi_rounded_rectangle;
+            case "vn": //vietnam
+                return R.drawable.vn_rounded_rectangle;
+            case "vu": //vanuatu
+                return R.drawable.vu_rounded_rectangle;
+            case "wf": //wallis and futuna
+                return R.drawable.wf_rounded_rectangle;
+            case "ws": //samoa
+                return R.drawable.ws_rounded_rectangle;
+            case "xk": //kosovo
+                return R.drawable.xk_rounded_rectangle;
+            case "ye": //yemen
+                return R.drawable.ye_rounded_rectangle;
+            case "yt": //mayotte
+                return R.drawable.yt_rounded_rectangle; // no exact flag found
+            case "za": //south africa
+                return R.drawable.za_rounded_rectangle;
+            case "zm": //zambia
+                return R.drawable.zm_rounded_rectangle;
+            case "zw": //zimbabwe
+                return R.drawable.zw_rounded_rectangle;
+            default:
+                return R.drawable.flag_transparent;
+        }
+    }
+
 
     /**
      * Returns image res based on country name code

@@ -1,0 +1,44 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="800dp"
+    android:height="800dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+  <group>
+    <clip-path
+        android:pathData="M2,4L26,4A2,2 0,0 1,28 6L28,22A2,2 0,0 1,26 24L2,24A2,2 0,0 1,0 22L0,6A2,2 0,0 1,2 4z"/>
+    <path
+        android:pathData="M2,4L26,4A2,2 0,0 1,28 6L28,22A2,2 0,0 1,26 24L2,24A2,2 0,0 1,0 22L0,6A2,2 0,0 1,2 4z"
+        android:fillColor="#ffffff"/>
+    <group>
+      <clip-path
+          android:pathData="M2,4L26,4A2,2 0,0 1,28 6L28,22A2,2 0,0 1,26 24L2,24A2,2 0,0 1,0 22L0,6A2,2 0,0 1,2 4z"/>
+      <path
+          android:pathData="M0,4h28v20h-28z"
+          android:fillColor="#0B36B2"/>
+      <path
+          android:pathData="M22.667,24L22.667,4L8.667,4L22.667,24Z"
+          android:fillColor="#FFD045"
+          android:fillType="evenOdd"/>
+      <path
+          android:pathData="M17.333,22.667L16.39,22.943L16.667,22L16.39,21.057L17.333,21.333L18.276,21.057L18,22L18.276,22.943L17.333,22.667Z"
+          android:fillColor="#ffffff"
+          android:fillType="evenOdd"/>
+      <path
+          android:pathData="M14.667,18.667L13.724,18.943L14,18L13.724,17.057L14.667,17.333L15.61,17.057L15.333,18L15.61,18.943L14.667,18.667Z"
+          android:fillColor="#ffffff"
+          android:fillType="evenOdd"/>
+      <path
+          android:pathData="M12,14.667L11.057,14.943L11.333,14L11.057,13.057L12,13.333L12.943,13.057L12.667,14L12.943,14.943L12,14.667Z"
+          android:fillColor="#ffffff"
+          android:fillType="evenOdd"/>
+      <path
+          android:pathData="M9.333,10.667L8.391,10.943L8.667,10L8.391,9.057L9.333,9.333L10.276,9.057L10,10L10.276,10.943L9.333,10.667Z"
+          android:fillColor="#ffffff"
+          android:fillType="evenOdd"/>
+      <path
+          android:pathData="M6.667,6.667L5.724,6.943L6,6L5.724,5.057L6.667,5.333L7.61,5.057L7.333,6L7.61,6.943L6.667,6.667Z"
+          android:fillColor="#ffffff"
+          android:fillType="evenOdd"/>
+    </group>
+  </group>
+</vector>
