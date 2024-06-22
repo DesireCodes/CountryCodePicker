@@ -49,7 +49,7 @@ public class CountryCodePicker extends RelativeLayout {
     static final int DEFAULT_UNSET = -99;
     static String TAG = "CCP";
     static String BUNDLE_SELECTED_CODE = "selectedCode";
-    static int LIB_DEFAULT_COUNTRY_CODE = 91;
+    static int LIB_DEFAULT_COUNTRY_CODE = 94;
     private static int TEXT_GRAVITY_LEFT = -1, TEXT_GRAVITY_RIGHT = 1, TEXT_GRAVITY_CENTER = 0;
     private static String ANDROID_NAME_SPACE = "http://schemas.android.com/apk/res/android";
     private CCPTalkBackTextProvider talkBackTextProvider = new InternalTalkBackTextProvider();
@@ -107,11 +107,11 @@ public class CountryCodePicker extends RelativeLayout {
     int dialogTypeFaceStyle;
     List<CCPCountry> preferredCountries;
     int ccpTextgGravity = TEXT_GRAVITY_CENTER;
-    //this will be "AU,IN,US"
+    //this will be "AU,LK,US"
     String countryPreference;
     int fastScrollerBubbleColor = 0;
     List<CCPCountry> customMasterCountriesList;
-    //this will be "AU,IN,US"
+    //this will be "AU,LK,US"
     String customMasterCountriesParam, excludedCountriesParam;
     Language customDefaultLanguage = Language.ENGLISH;
     Integer defaultFlagType = 1;
@@ -395,7 +395,7 @@ public class CountryCodePicker extends RelativeLayout {
 
                 //when it was not set means something was wrong with name code
                 if (!setUsingNameCode) {
-                    setDefaultCountry(CCPCountry.getCountryForNameCodeFromEnglishList("IN"));
+                    setDefaultCountry(CCPCountry.getCountryForNameCodeFromEnglishList("LK"));
                     setSelectedCountry(defaultCCPCountry);
                     setUsingNameCode = true;
                 }
@@ -424,7 +424,7 @@ public class CountryCodePicker extends RelativeLayout {
 
             //if default country is not set using nameCode or phone code, let's set library default as default
             if (getDefaultCountry() == null) {
-                setDefaultCountry(CCPCountry.getCountryForNameCodeFromEnglishList("IN"));
+                setDefaultCountry(CCPCountry.getCountryForNameCodeFromEnglishList("LK"));
                 if (getSelectedCountry() == null) {
                     setSelectedCountry(defaultCCPCountry);
                 }
@@ -1627,7 +1627,7 @@ public class CountryCodePicker extends RelativeLayout {
      * If invalid defaultCountryCode is applied, it won't be changed.
      *
      * @param defaultCountryCode code of your default country
-     *                           if you want to set IN +91(India) as default country, defaultCountryCode =  91
+     *                           if you want to set LK +94(Sri Lanka) as default country, defaultCountryCode =  94
      *                           if you want to set JP +81(Japan) as default country, defaultCountryCode =  81
      */
     @Deprecated
@@ -1648,7 +1648,7 @@ public class CountryCodePicker extends RelativeLayout {
      * If invalid defaultCountryCode is applied, it won't be changed.
      *
      * @param defaultCountryNameCode code of your default country
-     *                               if you want to set IN +91(India) as default country, defaultCountryCode =  "IN" or "in"
+     *                               if you want to set LK +94(Sri Lanka) as default country, defaultCountryCode =  "LK" or "LK"
      *                               if you want to set JP +81(Japan) as default country, defaultCountryCode =  "JP" or "jp"
      */
     public void setDefaultCountryUsingNameCode(String defaultCountryNameCode) {
@@ -1663,7 +1663,7 @@ public class CountryCodePicker extends RelativeLayout {
 
     /**
      * @return: Country Code of default country
-     * i.e if default country is IN +91(India)  returns: "91"
+     * i.e if default country is LK +94(Sri Lanka)  returns: "94"
      * if default country is JP +81(Japan) returns: "81"
      */
     public String getDefaultCountryCode() {
@@ -1674,7 +1674,7 @@ public class CountryCodePicker extends RelativeLayout {
      * * To get code of default country as Integer.
      *
      * @return integer value of default country code in CCP
-     * i.e if default country is IN +91(India)  returns: 91
+     * i.e if default country is LK +94(Sri Lanka)  returns: 94
      * if default country is JP +81(Japan) returns: 81
      */
     public int getDefaultCountryCodeAsInt() {
@@ -1691,7 +1691,7 @@ public class CountryCodePicker extends RelativeLayout {
      * To get code of default country with prefix "+".
      *
      * @return String value of default country code in CCP with prefix "+"
-     * i.e if default country is IN +91(India)  returns: "+91"
+     * i.e if default country is LK +94(Sri Lanka)  returns: "+94"
      * if default country is JP +81(Japan) returns: "+81"
      */
     public String getDefaultCountryCodeWithPlus() {
@@ -1702,7 +1702,7 @@ public class CountryCodePicker extends RelativeLayout {
      * To get name of default country.
      *
      * @return String value of country name, default in CCP
-     * i.e if default country is IN +91(India)  returns: "India"
+     * i.e if default country is LK +94(Sri Lanka)  returns: "India"
      * if default country is JP +81(Japan) returns: "Japan"
      */
     public String getDefaultCountryName() {
@@ -1715,7 +1715,7 @@ public class CountryCodePicker extends RelativeLayout {
      * To get name code of default country.
      *
      * @return String value of country name, default in CCP
-     * i.e if default country is IN +91(India)  returns: "IN"
+     * i.e if default country is LK +94(Sri Lanka)  returns: "LK"
      * if default country is JP +81(Japan) returns: "JP"
      */
     public String getDefaultCountryNameCode() {
@@ -1736,7 +1736,7 @@ public class CountryCodePicker extends RelativeLayout {
      * To get code of selected country.
      *
      * @return String value of selected country code in CCP
-     * i.e if selected country is IN +91(India)  returns: "91"
+     * i.e if selected country is LK +94(Sri Lanka)  returns: "94"
      * if selected country is JP +81(Japan) returns: "81"
      */
     public String getSelectedCountryCode() {
@@ -1747,7 +1747,7 @@ public class CountryCodePicker extends RelativeLayout {
      * To get code of selected country with prefix "+".
      *
      * @return String value of selected country code in CCP with prefix "+"
-     * i.e if selected country is IN +91(India)  returns: "+91"
+     * i.e if selected country is LK +94(Sri Lanka)  returns: "+94"
      * if selected country is JP +81(Japan) returns: "+81"
      */
     public String getSelectedCountryCodeWithPlus() {
@@ -1758,7 +1758,7 @@ public class CountryCodePicker extends RelativeLayout {
      * * To get code of selected country as Integer.
      *
      * @return integer value of selected country code in CCP
-     * i.e if selected country is IN +91(India)  returns: 91
+     * i.e if selected country is LK +94(Sri Lanka)  returns: 94
      * if selected country is JP +81(Japan) returns: 81
      */
     public int getSelectedCountryCodeAsInt() {
@@ -1775,7 +1775,7 @@ public class CountryCodePicker extends RelativeLayout {
      * To get name of selected country.
      *
      * @return String value of country name, selected in CCP
-     * i.e if selected country is IN +91(India)  returns: "India"
+     * i.e if selected country is LK +94(Sri Lanka)  returns: "Sri Lanka"
      * if selected country is JP +81(Japan) returns: "Japan"
      */
     public String getSelectedCountryName() {
@@ -1786,7 +1786,7 @@ public class CountryCodePicker extends RelativeLayout {
      * To get name of selected country in English.
      *
      * @return String value of country name in English language, selected in CCP
-     * i.e if selected country is IN +91(India)  returns: "India" no matter what language is currently selected.
+     * i.e if selected country is LK +94(Sri Lanka)  returns: "Sri Lanka" no matter what language is currently selected.
      * if selected country is JP +81(Japan) returns: "Japan"
      */
     public String getSelectedCountryEnglishName() {
@@ -1797,7 +1797,7 @@ public class CountryCodePicker extends RelativeLayout {
      * To get name code of selected country.
      *
      * @return String value of country name, selected in CCP
-     * i.e if selected country is IN +91(India)  returns: "IN"
+     * i.e if selected country is LK +94(Sri Lanka)  returns: "LK"
      * if selected country is JP +81(Japan) returns: "JP"
      */
     public String getSelectedCountryNameCode() {
@@ -1819,7 +1819,7 @@ public class CountryCodePicker extends RelativeLayout {
      * This will set country with @param countryCode as country code, in CCP
      *
      * @param countryCode a valid country code.
-     *                    If you want to set IN +91(India), countryCode= 91
+     *                    If you want to set LK +94(India), countryCode= 94
      *                    If you want to set JP +81(Japan), countryCode= 81
      */
     public void setCountryForPhoneCode(int countryCode) {
@@ -1838,7 +1838,7 @@ public class CountryCodePicker extends RelativeLayout {
      * This will set country with @param countryNameCode as country name code, in CCP
      *
      * @param countryNameCode a valid country name code.
-     *                        If you want to set IN +91(India), countryCode= IN
+     *                        If you want to set LK +94(India), countryCode= LK
      *                        If you want to set JP +81(Japan), countryCode= JP
      */
     public void setCountryForNameCode(String countryNameCode) {
@@ -1900,7 +1900,7 @@ public class CountryCodePicker extends RelativeLayout {
     /**
      * This function combines selected country code from CCP and carrier number from @param editTextCarrierNumber
      *
-     * @return Full number is countryCode + carrierNumber i.e countryCode= 91 and carrier number= 8866667722, this will return "918866667722"
+     * @return Full number is countryCode + carrierNumber i.e countryCode= 94 and carrier number= 771425367, this will return "94771425367"
      */
     public String getFullNumber() {
         try {
@@ -1917,7 +1917,7 @@ public class CountryCodePicker extends RelativeLayout {
      * Sets country of separated country code in CCP and carrier number as text of editTextCarrierNumber
      * If no valid country code is found from full number, CCP will be set to default country code and full number will be set as carrier number to editTextCarrierNumber.
      *
-     * @param fullNumber is combination of country code and carrier number, (country_code+carrier_number) for example if country is India (+91) and carrier/mobile number is 8866667722 then full number will be 9188666667722 or +918866667722. "+" in starting of number is optional.
+     * @param fullNumber is combination of country code and carrier number, (country_code+carrier_number) for example if country is India (+94) and carrier/mobile number is 771425367 then full number will be 947766666772 or +94771425367. "+" in starting of number is optional.
      */
     public void setFullNumber(String fullNumber) {
         CCPCountry country = CCPCountry.getCountryForNumber(getContext(), getLanguageToApply(), preferredCountries, fullNumber);
@@ -1937,7 +1937,7 @@ public class CountryCodePicker extends RelativeLayout {
      * This function combines selected country code from CCP and carrier number from @param editTextCarrierNumber
      * This will return formatted number.
      *
-     * @return Full number is countryCode + carrierNumber i.e countryCode= 91 and carrier number= 8866667722, this will return "918866667722"
+     * @return Full number is countryCode + carrierNumber i.e countryCode= 94 and carrier number= 771425367, this will return "94771425367"
      */
     public String getFormattedFullNumber() {
         try {
@@ -1952,7 +1952,7 @@ public class CountryCodePicker extends RelativeLayout {
     /**
      * This function combines selected country code from CCP and carrier number from @param editTextCarrierNumber and prefix "+"
      *
-     * @return Full number is countryCode + carrierNumber i.e countryCode= 91 and carrier number= 8866667722, this will return "+918866667722"
+     * @return Full number is countryCode + carrierNumber i.e countryCode= 94 and carrier number= 771425367, this will return "+94771425367"
      */
     public String getFullNumberWithPlus() {
         return "+" + getFullNumber();
@@ -2052,8 +2052,8 @@ public class CountryCodePicker extends RelativeLayout {
     /**
      * If nameCode of country in CCP view is not required use this to show/hide country name code of ccp view.
      *
-     * @param showNameCode true will show country name code in ccp view, it will result " (IN) +91 "
-     *                     false will remove country name code from ccp view, it will result  " +91 "
+     * @param showNameCode true will show country name code in ccp view, it will result " (LK) +94 "
+     *                     false will remove country name code from ccp view, it will result  " +94 "
      */
     public void showNameCode(boolean showNameCode) {
         this.showNameCode = showNameCode;

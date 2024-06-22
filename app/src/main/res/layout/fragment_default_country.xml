@@ -58,7 +58,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
                             android:layout_marginLeft="32dp"
-                            android:text='&#60;com.hbb20.CountryCodePicker \n android:id="@+id/ccp" \n android:layout_width="wrap_content" \n android:layout_height="wrap_content" \n app:ccp_defaultNameCode="US" /&#62;' />
+                            android:text='&#60;com.desirecodes.codepicker.CountryCodePicker \n android:id="@+id/ccp" \n android:layout_width="wrap_content" \n android:layout_height="wrap_content" \n app:ccp_defaultNameCode="US" /&#62;' />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -85,7 +85,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="center_vertical">
 
-                                    <com.hbb20.CountryCodePicker
+                                    <com.desirecodes.codepicker.CountryCodePicker
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:ccp_defaultNameCode="US" />
@@ -123,7 +123,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
                             android:layout_marginLeft="32dp"
-                            android:text='&#60;com.hbb20.CountryCodePicker \n android:id="@+id/ccp" \n android:layout_width="wrap_content" \n android:layout_height="wrap_content" \n app:ccp_defaultPhoneCode="81" /&#62;' />
+                            android:text='&#60;com.desirecodes.codepicker.CountryCodePicker \n android:id="@+id/ccp" \n android:layout_width="wrap_content" \n android:layout_height="wrap_content" \n app:ccp_defaultPhoneCode="81" /&#62;' />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -150,7 +150,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="center_vertical">
 
-                                    <com.hbb20.CountryCodePicker
+                                    <com.desirecodes.codepicker.CountryCodePicker
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:ccp_defaultPhoneCode="81" />
@@ -297,7 +297,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical">
 
-                            <com.hbb20.CountryCodePicker
+                            <com.desirecodes.codepicker.CountryCodePicker
                                 android:id="@+id/ccp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
