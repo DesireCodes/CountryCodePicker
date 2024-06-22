@@ -188,7 +188,7 @@ class CountryCodeDialog {
             recyclerView_countryDialog.setLayoutParams(params);
         }
 
-        final CountryCodeAdapter cca = new CountryCodeAdapter(context, masterCountries, codePicker, rlQueryHolder, editText_search, textView_noResult, dialog, imgClearQuery);
+        final CountryCodeAdapter cca = new CountryCodeAdapter(context, masterCountries, codePicker, rlQueryHolder, editText_search, textView_noResult, dialog, imgClearQuery, codePicker.getFlagType());
         recyclerView_countryDialog.setLayoutManager(new LinearLayoutManager(context));
         recyclerView_countryDialog.setAdapter(cca);
 

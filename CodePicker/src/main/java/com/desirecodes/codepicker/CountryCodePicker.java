@@ -28,6 +28,7 @@ import android.widget.Toast;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.IdRes;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -67,7 +68,7 @@ public class CountryCodePicker extends RelativeLayout {
     LinearLayout linearFlagHolder;
     CCPCountry selectedCCPCountry;
     CCPCountry defaultCCPCountry;
-    RelativeLayout relativeClickConsumer;
+    ConstraintLayout relativeClickConsumer;
     CountryCodePicker codePicker;
     TextGravity currentTextGravity;
     String originalHint = "";
@@ -113,6 +114,7 @@ public class CountryCodePicker extends RelativeLayout {
     //this will be "AU,IN,US"
     String customMasterCountriesParam, excludedCountriesParam;
     Language customDefaultLanguage = Language.ENGLISH;
+    Integer defaultFlagType = 1;
     Language languageToApply = Language.ENGLISH;
 
     boolean dialogKeyboardAutoPopup = true;
@@ -225,7 +227,7 @@ public class CountryCodePicker extends RelativeLayout {
         imageViewFlag = (ImageView) holderView.findViewById(R.id.image_flag);
         linearFlagHolder = (LinearLayout) holderView.findViewById(R.id.linear_flag_holder);
         linearFlagBorder = (LinearLayout) holderView.findViewById(R.id.linear_flag_border);
-        relativeClickConsumer = (RelativeLayout) holderView.findViewById(R.id.rlClickConsumer);
+        relativeClickConsumer = (ConstraintLayout) holderView.findViewById(R.id.rlClickConsumer);
         codePicker = this;
         if (attrs != null) {
             applyCustomProperty(attrs);
@@ -344,6 +346,13 @@ public class CountryCodePicker extends RelativeLayout {
             attrLanguage = a.getInt(R.styleable.CountryCodePicker_ccp_defaultLanguage, Language.ENGLISH.ordinal());
             customDefaultLanguage = getLanguageEnum(attrLanguage);
             updateLanguageToApply();
+
+            //if custom default language is specified, then set it as custom else sets english as custom
+            int attrFlagType;
+            attrFlagType = a.getInt(R.styleable.CountryCodePicker_ccp_countryFlagType, 1);
+            defaultFlagType = attrFlagType;
+//            defaultFlagType = getFlagTypeEnum(attrFlagType);
+//            updateFlagToApply();
 
             //custom master list
             customMasterCountriesParam = a.getString(R.styleable.CountryCodePicker_ccp_customMasterCountries);
@@ -887,7 +896,7 @@ public class CountryCodePicker extends RelativeLayout {
             textView_selectedCountry.setText(displayText);
         }
 
-        imageViewFlag.setImageResource(selectedCCPCountry.getFlagID());
+        imageViewFlag.setImageResource(selectedCCPCountry.getFlagID(defaultFlagType));
 
         if (onCountryChangeListener != null) {
             onCountryChangeListener.onCountrySelected();
@@ -1552,6 +1561,23 @@ public class CountryCodePicker extends RelativeLayout {
         } else {
             return Language.ENGLISH;
         }
+    }
+
+    /**
+     * Related to selected country
+     */
+
+    //add entry here
+    private int getFlagTypeEnum(int index) {
+        if (index < FlagType.values().length) {
+            return FlagType.circle.enumIndex;
+        } else {
+            return 0;
+        }
+    }
+
+    int getFlagType(){
+        return defaultFlagType;
     }
 
     /**
@@ -2594,6 +2620,20 @@ public class CountryCodePicker extends RelativeLayout {
         // A phone number is of type UNKNOWN when it does not fit any of the known patterns for a
         // specific region.
         UNKNOWN
+    }
+
+    public enum FlagType {
+        rounded_rectangle(1),
+        rectangle(2),
+
+        circle(3);
+
+        int enumIndex;
+
+        FlagType(int i) {
+            enumIndex = i;
+        }
+
     }
 
     public enum AutoDetectionPref {

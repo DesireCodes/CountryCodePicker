@@ -17,10 +17,14 @@
 
 
     <com.desirecodes.codepicker.CountryCodePicker
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        app:ccp_defaultLanguage="AFRIKAANS"
+        app:ccp_arrow="@drawable/ic_keyboard_arrow_down_24"
+        app:layout_constraintDimensionRatio="3:1"
+        app:ccp_countryFlagType="rectangle"
+        app:ccp_defaultLanguage="ENGLISH"
         app:ccp_defaultPhoneCode="94"
+        android:background="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

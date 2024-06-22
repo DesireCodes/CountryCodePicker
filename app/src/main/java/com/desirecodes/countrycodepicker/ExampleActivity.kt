@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
-import `in`.hbb20.countrycodepickerproject.CustomFontFragment
 
 const val EXTRA_INIT_TAB = "extraInitTab"
 

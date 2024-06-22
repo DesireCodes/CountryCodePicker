@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -40,7 +41,9 @@ class CountryCodeAdapter extends RecyclerView.Adapter<CountryCodeAdapter.Country
     ImageView imgClearQuery;
     int preferredCountriesCount = 0;
 
-    CountryCodeAdapter(Context context, List<CCPCountry> countries, CountryCodePicker codePicker, RelativeLayout rlQueryHolder, final EditText editText_search, TextView textView_noResult, Dialog dialog, ImageView imgClearQuery) {
+    int flagType = 0;
+
+    CountryCodeAdapter(Context context, List<CCPCountry> countries, CountryCodePicker codePicker, RelativeLayout rlQueryHolder, final EditText editText_search, TextView textView_noResult, Dialog dialog, ImageView imgClearQuery, int flagType) {
         this.context = context;
         this.masterCountries = countries;
         this.codePicker = codePicker;
@@ -51,6 +54,7 @@ class CountryCodeAdapter extends RecyclerView.Adapter<CountryCodeAdapter.Country
         this.imgClearQuery = imgClearQuery;
         this.inflater = LayoutInflater.from(context);
         this.filteredCountries = getFilteredCountries("");
+        this.flagType = flagType;
         setSearchBar();
     }
 
@@ -290,7 +294,8 @@ class CountryCodeAdapter extends RecyclerView.Adapter<CountryCodeAdapter.Country
                     linearFlagHolder.setVisibility(View.GONE);
                 } else {
                     linearFlagHolder.setVisibility(View.VISIBLE);
-                    imageViewFlag.setImageResource(ccpCountry.getFlagID());
+                    Log.e("Flag ID", String.valueOf(ccpCountry.getFlagID(codePicker.getFlagType())));
+                    imageViewFlag.setImageResource(ccpCountry.getFlagID(codePicker.getFlagType()));
                 }
             } else {
                 divider.setVisibility(View.VISIBLE);

@@ -3,7 +3,7 @@
     android:height="116417dp"
     android:viewportWidth="216958"
     android:viewportHeight="116417">
-  <path
+  <!--<path
       android:pathData="M0,-0h216958V116417H0z"
       android:fillColor="#c62139"
       android:fillType="evenOdd"/>
@@ -70,5 +70,5 @@
   <path
       android:pathData="M108541,26889S89360,41168 89360,58005c0,16839 19181,31522 19181,31522s19058,-13472 19058,-31522c0,-18049 -19058,-31116 -19058,-31116zM108534,30345S91470,43048 91470,58027c0,14981 17064,28044 17064,28044s16955,-11985 16955,-28044c0,-16057 -16955,-27682 -16955,-27682z"
       android:fillColor="#c62139"
-      android:fillType="evenOdd"/>
+      android:fillType="evenOdd"/>-->
 </vector>

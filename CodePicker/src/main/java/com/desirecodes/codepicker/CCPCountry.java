@@ -2656,9 +2656,15 @@ public class CCPCountry implements Comparable<CCPCountry> {
         this.englishName = englishName;
     }
 
-    public int getFlagID() {
+    public int getFlagID(int flagType) {
+        Log.e("Flag Type",String.valueOf(flagType));
         if (flagResID == -99) {
-            flagResID = getFlagMasterResID(this);
+            if (flagType==1)
+                flagResID = getFlagMasterResID(this);
+            if (flagType==2)
+                flagResID = getCircleFlagMasterResID(this);
+            if (flagType==0)
+                flagResID = getRoundedRectangleFlagMasterResID(this);
         }
         return flagResID;
     }

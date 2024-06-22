@@ -39,7 +39,7 @@
                 android:contentDescription="@string/dismiss_button_content_description"
                 android:focusable="true"
                 android:padding="4dp"
-                app:srcCompat="@drawable/ic_clear_black_24dp" />
+                app:srcCompat="@drawable/ic_clear_black_24" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -72,7 +72,7 @@
                 android:contentDescription="@string/clear_search_button_content_description"
                 android:focusable="true"
                 android:padding="10dp"
-                app:srcCompat="@drawable/ic_backspace_black_24dp" />
+                app:srcCompat="@drawable/ic_backspace_black_24" />
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView

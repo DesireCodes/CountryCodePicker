@@ -194,7 +194,7 @@
       android:strokeColor="#000"/>
   <path
       android:pathData="M604.8,310.9a38,12.4 66.5,1 0,23.1 -8.9a38,12.4 66.5,1 0,-23.1 8.9z"
-      android:strokeWidth="1pt"
+      android:strokeWidth="1"
       android:fillColor="#d41c30"
       android:strokeColor="#000"/>
   <path

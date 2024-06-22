@@ -143,5 +143,12 @@
             <enum name="LOCALE_SIM_NETWORK" value="312" />
             <enum name="LOCALE_NETWORK_SIM" value="321" />
         </attr>
+
+
+        <attr name="ccp_countryFlagType" format="enum">
+            <enum name="rounded_rectangle" value="0" />
+            <enum name="rectangle" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
     </declare-styleable>
 </resources>
